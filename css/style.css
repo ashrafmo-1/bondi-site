@@ -1,0 +1,239 @@
+:root {
+    --dark-color: rgb(11, 13, 60);
+    --normal-dark-color: rgb(0, 8, 255);
+    --red-color: #c5001d;
+    --yellow-color: #ffc400;
+    --hide-color: #eff5ff;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-title::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: var(--yellow-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-btn {
+    background-color: var(--normal-dark-color);
+}
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--normal-dark-color);
+}
+
+.navbar-toggler {
+    color: var(--red-color);
+}
+
+.bars-icon {
+    color: var(--red-color);
+
+}
+
+.landing {
+    background-color: var(--dark-color);
+    height: calc(100vh - 70px);
+}
+
+.landing .btn {
+    background-color: var(--red-color);
+    border: none;
+    color: var(--yellow-color);
+    padding: 8px 22px;
+}
+
+.landing .btn:focus {
+    border: 1px solid white;
+}
+
+/* strat features */
+.features .icons {
+    height: 200px;
+}
+
+.features .icons svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icons .number {
+    font-size: 12rem;
+    color: var(--hide-color);
+}
+
+.features .icons .icon {
+    color: var(--yellow-color);
+    font-size: 70px;
+}
+
+.features .box h3 {
+    color: var(--red-color);
+}
+
+/* end features */
+
+/* start our work */
+.our-work {
+    background-color: var(--hide-color);
+}
+
+.our-work ul .active {
+    background-color: var(--red-color);
+    color: var(--hide-color);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.our-work ul .active:hover {
+    color: var(--yellow-color);
+    transform: scale(1.1);
+}
+
+.our-work ul li {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--red-color);
+}
+
+.our-work .row .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eff5ffb6;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    font-size: 27px;
+    font-weight: bold;
+    color: var(--red-color);
+    transition: 0.4s;
+    transform: translateY(calc(-100% - 5px));
+    cursor: pointer;
+}
+
+.our-work .box:hover:before {
+    transform: translateY(0);
+}
+
+.our-work .main-btn {
+    background-color: var(--red-color);
+    border: white;
+    padding: 10px 25px;
+}
+
+/* end our work */
+
+.about-us .main-btn {
+    background-color: var(--red-color);
+    border: white;
+    padding: 10px 25px;
+}
+
+.team {
+    background-color: var(--hide-color);
+}
+
+.team .description h1 {
+    color: var(--yellow-color);
+}
+
+.team .box h3 {
+    background-color: var(--dark-color);
+    color: var(--hide-color);
+    padding: 10px;
+}
+
+.team .box p {
+    background-color: white;
+    padding: 25px 18px;
+}
+
+.contact {
+    background-color: var(--dark-color);
+}
+
+.contact .description h1 {
+    color: var(--yellow-color);
+}
+
+.contact ul li {
+    color: var(--hide-color);
+    cursor: pointer;
+}
+
+.blog .box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.blog .box img {
+    border-radius: 5px 5px 0 0;
+}
+
+.blog .main-btn {
+    background-color: var(--red-color);
+    border: white;
+    padding: 10px 30px;
+}
+
+.Subscribe {
+    background-color: var(--yellow-color);
+}
+
+.Subscribe input[type="email"] {
+    border: none;
+    border-bottom: 1px solid var(--hide-color);
+}
+
+.Subscribe input:focus {
+    outline: none;
+}
+
+.Subscribe input::placeholder {
+    color: var(--hide-color);
+}
+
+.Subscribe input[type="submit"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+.footer {
+    background: var(--dark-color);
+}
+
+.footer .links h5:nth-of-type(2),
+.footer .links h5:nth-of-type(3),
+.footer .links h5:nth-of-type(4),
+.footer .links h5:nth-of-type(5),
+.footer .links h5:nth-of-type(6){
+    font-size: 14px;
+}
